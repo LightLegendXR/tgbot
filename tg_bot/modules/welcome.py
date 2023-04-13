@@ -145,13 +145,13 @@ def new_member(update: Update, context: CallbackContext):
             # Give the devs a special welcome
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "Naisu! One of developers just jumped in >.<")
+                    "Whoa! One of developers just jumped in >.<")
                 continue
 
             # Welcome yourself
             elif new_mem.id == bot.id:
                 update.effective_message.reply_text(
-                    "Hewwo! Thanks for adding me >.<",
+                    "Hi! Thanks for adding me >.<",
                     reply_to_message_id=reply)
                 continue
 
