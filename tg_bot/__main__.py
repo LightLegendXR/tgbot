@@ -20,7 +20,7 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 from tg_bot.modules.helper_funcs.misc import send_to_list
 
-BOT_IMG = "https://telegra.ph/file/572f1989b04f0eefa53b0.jpg"
+BOT_IMG = "https://telegra.ph/file/5df064b64df3ed6f78284.jpg"
 
 PM_START_TEXT = """
 Hi {}, my name is {}!
@@ -146,7 +146,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(text="Source Code",
-                                             url="github.com/el0xren/tgbot")
+                                             url="github.com/lightlegendxr/tgbot")
                     ],
                      [
                          InlineKeyboardButton(text="Support Group",
@@ -160,7 +160,7 @@ def start(update: Update, context: CallbackContext):
                                  context.bot.username))
                      ]]))
     else:
-        update.effective_message.reply_text("Yo, whadup?")
+        update.effective_message.reply_text("Yo, whassup?")
 
 
 # for test purposes
